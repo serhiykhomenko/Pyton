@@ -22,3 +22,29 @@ elif age < 18:
 else:
     print ("You have become an adult")
 
+    a = 10
+    b = 5
+
+    if a % b == 0:
+        print("Ділиться")
+    print(a // b)
+else :
+    print("Ділиться з залишком")
+    print(a % b)
+
+    salary = int(input("Please enter your salary: "))
+    years_worked = int(input("Please enter the number of years you have worked: "))
+
+    if years_worked <= 3:
+        salary += salary * 0.1
+    elif years_worked >= 3:
+        salary += salary * 0.2
+
+    if salary < 4000:
+        salary += 1000
+    elif salary >= 4000:
+        salary += 500
+
+    print("Your new salary is: ", salary)
+
+
